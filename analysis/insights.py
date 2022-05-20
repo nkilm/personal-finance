@@ -17,6 +17,7 @@ def summary():
     debits = df["Debit"].sum()
     return credits,debits
 
+<<<<<<< HEAD
 def present_date():
     date = df["Transaction Date"][len(df["Transaction Date"])-1]
     months_in_year = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -32,3 +33,14 @@ def balance():
     bal = df["Balance"][len(df["Balance"])-1]
 
     return date,bal
+=======
+def month():
+    date = df["Transaction Date"][len(df["Transaction Date"])-1]
+    months_in_year = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+    print(date)
+    datem = datetime.datetime.strptime(date, "%Y-%m-%d %H:%M:%S")
+    month = months_in_year[datem.month-1]
+    year = datem.year
+    return month,months_in_year
+>>>>>>> b7538ebc96a4803aa3aac816347c8ce77f959972
