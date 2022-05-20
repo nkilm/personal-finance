@@ -1,7 +1,18 @@
 import pandas as pd
 
-data = pd.read_excel("./data/transactions.xlsx")
+df = pd.read_csv("./data/transactions.csv")
 
-df = pd.DataFrame(data)
+def transactions_list():
+    """
+    List of all transactions in the form of dataframe.
+    """
 
-print(df.head(3))
+    # df = df["index","Transaction Date","Description","Ref No./Cheque No","Debit"]
+
+    return df
+
+def summary():
+    credits = df["Credit"].sum()
+    debits = df["Debit"].sum()
+    return credits,debits
+    
