@@ -32,3 +32,9 @@ def balance():
     bal = df["Balance"][len(df["Balance"])-1]
 
     return date,bal
+
+def credit_transactions():
+    return df[df["Credit"]!=0.0]
+
+def debit_transactions():
+    return df[df["Debit"]!=0.0]
