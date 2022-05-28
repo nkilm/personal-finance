@@ -25,6 +25,9 @@ def present_date():
     year = datem.year
     return month,year
 
+def initial_balance():
+    return df.loc[0,"Balance"]
+    
 def balance():
     date= df["Transaction Date"][len(df["Transaction Date"])-1]
     date = datetime.strptime(date, "%Y-%m-%d %H:%M:%S")

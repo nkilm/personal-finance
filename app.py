@@ -35,3 +35,5 @@ if navbar=="All Transactions":
     df_total = transactions_list()
     st.subheader(f"Total Transactions - {len(df_total)}")
     st.dataframe(df_total)
+
+st.write(f"<h3>INITIAL BALANCE <span style=\"color:yellow;padding-left:20px;\">₹{initial_balance()}</span></h3>",unsafe_allow_html=True)
