@@ -6,14 +6,15 @@ Analyse your monthly spendings💲
 ## Requiements 
  `.csv` file containing list of transactions
 
-## Usage
+## Usage 
 
 ```bash
 git clone git@github.com:nkilm/personal-finance.git
 ```
-```bash
-cd ./personal-finance 
-```
+
+#### Create Virtual environment - [help!](https://towardsdatascience.com/getting-started-with-python-virtual-environments-252a6bd2240#:~:text=the%20below%20steps.-,Creating%20a%20virtual%20environment,-A%20common%20way)
+
+After activating the venv,
 ```bash
 pip install -r ./requirements.txt
 ```
